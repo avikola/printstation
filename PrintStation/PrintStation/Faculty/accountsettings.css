@@ -1,0 +1,551 @@
+﻿
+.emptyTable
+{
+    margin-top: 10px;
+    margin-left: -3px;
+    color: #FC622F;
+    text-shadow: none;
+}
+
+#bringtofront
+{
+    position: relative;
+    z-index: 1;
+}
+
+#faqrecolour:hover
+{
+    background-color: white !important;
+    color: #FC622F !important;
+    border: none !important;
+}
+
+/* CartPage */
+
+#outercase
+{
+    padding-bottom: 00px;
+}
+
+#Button1
+{
+    margin-left:  10px;
+    margin-top: 50px;
+}
+
+#DeletePrints
+{
+    text-shadow: none;
+}
+
+#packitin
+{
+    width: 1300px;
+    margin-left: 250px;
+    margin-right: 20px;
+    margin-top: -15px;
+    border: 3px solid white;
+}
+
+.cartprint
+{
+    position: absolute;
+    margin-left: 265px;
+    margin-top: -55px;
+    font-size: 34px;
+}
+
+.cartproduct
+{
+    position: absolute;
+    margin-left: 870px;
+    margin-top: -55px;
+    font-size: 34px;
+}
+
+/* Account Settings */
+
+.settingspos
+{
+        padding-top: 150px;
+        margin-left: 370px !important;
+        font-size: 19px;
+}
+
+.settingstextright
+{
+    float: right !important;
+}
+
+#Label2, #Label3, #Label4, #Label5, #Label6, #Label7, #Label8, #Label9
+{
+    float: left;
+}
+
+.settingsleft
+{
+    border-bottom: 2px solid white;
+}
+
+.settingsright
+{
+    border-bottom: 2px solid white;
+}
+
+/* Change Password */
+
+#changepass
+{
+    margin-left: 625px;
+    padding-top: 100px;
+
+}
+
+#Button1
+{   
+    width: 110%;
+    border: 3px solid white;
+    background-color: black;
+    margin-top: 30px;
+}
+
+#Button1:hover
+{
+    color: #FC622F;
+    border-color: #FC622F;
+}
+
+#Button2
+{
+    width: 100%;
+    border: 3px solid white;
+    background-color: black;
+    margin-top: 30px;
+    color: white !important;
+}
+
+#Button2:hover
+{
+    color: #FD6330;
+    border-color: #FD6330;
+}
+
+
+/* Logout Buttons Dropdown */
+
+.btn.btn-default.dropdown-toggle.logoutbutton, .dropdown-menu.logoutbutton
+{
+    color: #DE5C32;
+    background-color: black;
+    border: 2px solid #DE5C32;
+    text-shadow: none;
+}
+
+.open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover
+{
+    background-color: black !important;
+    color: #DE5C32 !important;
+    border: 2px solid #DE5C32 !important;
+}
+
+.dropdown-menu .divider.logoutsep
+{
+    background-color: #DE5C32;
+}
+
+.btn-group.logoutposition
+{
+    margin-top: 35px;
+    margin-left: 450px;
+}
+
+.dropdown-menu.logoutbutton>li>a
+{
+    color: #DE5C32;
+}
+
+
+
+/* The Rest */
+
+body
+{
+    color: white !important;
+}
+
+.glyphicon.glyphicon-question-sign
+{
+    top: 2px;
+    left: 5px;
+}
+
+.nav.masthead-nav
+{
+    display: inline-flex;
+}
+
+#whitetext1
+{
+    color: black;
+    font-family:'Trebuchet MS', sans-serif;
+    text-shadow:none;
+    font-size: 50px;
+    margin-left: 20px;
+    font-weight: 700;
+}
+
+#FAQnav
+{
+    position: fixed;
+    float: right;
+    right: 20px;
+    top: 10px;
+}
+
+#PSLogo
+{
+    width: 60px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+
+::selection {
+  background: rgb(254, 100, 47);
+}
+
+.student_dashboard
+{
+    background-color: rgba(0,0,0, 0.7);
+    width: 1850px;
+    height: 550px;
+    margin-left: -395px;
+    border-radius: 4px 4px;
+}
+
+.student_dashboard .nav.nav-tabs li
+{
+    text-shadow: none;
+    width: 925px;
+}
+
+.nav-tabs>li.active>a
+{
+    background-color: rgba(252, 98, 47, 0.85) !important;
+    color: white !important;
+    border: 2px solid black !important;
+    border-bottom-color: transparent !important;
+}
+
+.nav-tabs
+{
+    border-bottom: 2px solid rgba(252, 98, 47, 0.85) !important;
+}
+
+.nav-tabs>li.active>a:hover
+{
+    background-color: rgba(252, 98, 47, 0.85) !important;
+    border-color: black !important;
+    border-bottom-color: transparent !important;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li>a
+{
+    font-size: 30px;
+}
+
+.nav-tabs>li>a
+{
+    color: white;
+}
+
+.nav>li>a:hover, .nav-tabs>li>a:hover
+{
+    background-color: rgba(252, 98, 47, 0.85) !important;
+    border: 2px solid black !important;
+}
+
+.nav-tabs>li>a:hover
+{
+    border-color: black !important;
+    border-bottom-color: transparent !important;
+}
+
+#lefttab
+{
+    margin-right: 1px !important;
+}
+
+#righttab
+{
+    margin-right: 1px !important;
+}
+
+.wholedashboard
+{
+    margin-bottom: -50px;
+}
+
+
+/* Pills */
+
+.nav.nav-pills {
+    list-style-type: none;
+    margin-left: 20px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    width: 800px;
+} 
+
+.nav.nav-pills li a
+{
+    width: 910px;
+    padding: 16px;
+}
+
+#placeorders
+{
+    width: 900px !important;
+    margin-top: 30px;
+    padding-top: 195px;
+    padding-bottom: 320px;
+    background-color: rgba(255,255,255,0.85);
+    border: 2px solid rgba(252, 98, 47, 0.85);
+    border-radius: 20px 20px;
+    color: black;
+    text-shadow: none;
+}
+
+#placeorderpill
+{
+    padding-bottom: 100px !important;
+}
+
+.nav-pills>li.active>a
+{
+    background-color: rgba(252, 98, 47, 0.85) !important;
+    border: 2px solid black !important;
+}
+
+.nav-pills>li>a
+{
+    color: white;
+    border: 2px solid rgba(252, 98, 47, 0.85) !important;
+    background-color: rgba(0,0,0, 0.85) !important;
+}
+
+#vieworderpill
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#vieworders
+{
+    width: 900px !important;
+    margin-top: 30px;
+    padding-top: 195px;
+    padding-bottom: 265px;
+    background-color: rgba(255,255,255,0.85);
+    border: 2px solid rgba(252, 98, 47, 0.85);
+    border-radius: 20px 20px;
+    color: black;
+    text-shadow: none;
+}
+
+#form1
+{
+    padding-top: 100px;
+}
+
+/*Base*/
+
+html,
+body {
+    background-image: url('../Additional/images/Manipal_Student_image.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    background-color: #060;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+.site-wrapper
+{
+  display: table;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+.site-wrapper-inner
+{
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+.inner {
+  padding: 30px;
+}
+
+/*Header*/
+
+.masthead-brand
+{
+    width:200px;
+    float:left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  border-bottom: 2px solid transparent;
+  text-shadow: none;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus
+{
+  background-color: transparent;
+  color: #FE642F;
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus
+{
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px)
+{
+  .masthead-brand
+  {
+    float: left;
+  }
+  .masthead-nav
+  {
+    float: right;
+  }
+}
+
+/*Cover*/
+
+.cover
+{
+  padding: 0 20px;
+}
+
+.cover .btn-lg
+{
+  padding: 10px 50px;
+  font-weight: bold;
+  
+}
+
+@media (min-width: 768px)
+{
+    .masthead 
+    {
+        position: fixed;
+        top: 0;
+    }
+    .mastfoot
+    {
+        position: fixed;
+        bottom: 0;
+    }
+
+    .site-wrapper-inner
+    {
+        vertical-align: middle;
+    }
+
+    .masthead,
+    .mastfoot,
+    .cover-container
+    {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 992px)
+{
+    .masthead,
+    .mastfoot,
+    .cover-container
+    {
+        width: 1100px;
+    }
+}
+
+
+
+@media (max-width: 767px)
+{
+    #form1
+    {
+        margin-top: 100px;
+    }
+
+    #mininav
+    {
+        border-bottom: 7px dotted rgba(0, 0, 0, 0.45);
+    }
+
+    .mastfoot > .inner
+    {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    .cover-container > .inner.cover
+    {
+        margin-top: 35%;
+    }
+}
+
+@media (max-width: 990px)
+{
+    #form1
+    {
+        margin-left: 38px;
+        margin-right: 60px;
+    }
+
+}
+
+@media (max-width: 1199px)
+{
+    #Button1
+    {
+        position: initial;
+        width: 100%;
+        margin-left: 13px;
+    }
+
+    #Button2 
+    {
+        width: 100%;
+        margin-left: 13px;
+        margin-top: 10px;
+    }
+}

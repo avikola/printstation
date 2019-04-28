@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PrintStation_M.StudentTab1"
+             xmlns:pages="clr-namespace:PrintStation_M;assembly=PrintStation_M"
+             Title="Catalogue" BackgroundColor="AliceBlue">
+    
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Credits Remaining: 200" HorizontalTextAlignment="End" Margin="0,10,10,0"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="0">
+                <Label FontSize="40" Text="Student" TextColor="Black" FontAttributes="Bold"/>
+                <Label FontSize="40" Text="Dashboard" TextColor="#FC622F" FontAttributes="Bold"/>
+            </StackLayout>
+            <Button Text="Go To Cart" TextColor="White" BackgroundColor="#FC622F" Margin="35,10,35,10" Clicked="SwitchtoCart"/>
+        
+            <StackLayout BackgroundColor="Black" Orientation="Horizontal">
+                <Image x:Name="pen1" HeightRequest="225" WidthRequest="225" />
+                <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" Margin="0,0,10,0" VerticalOptions="Center">
+                    <Label Text="Black Pen" FontSize="Large" TextColor="White" HorizontalTextAlignment="Center"/>
+                    <Label Text="Cost: 10 Credits" TextColor="White" HorizontalTextAlignment="Center"/>
+                    <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                        <Stepper x:Name="bpstepper" Minimum="1" Maximum="100" Increment="1" HorizontalOptions="FillAndExpand"></Stepper>
+                        <Label TextColor="White" HorizontalOptions="Center" FontSize="Medium"
+                                Text="{Binding Source={x:Reference bpstepper},
+                                Path=Value,
+                                StringFormat='Quantity: {0}' }"/>
+                    </StackLayout>
+                    <Button Text="Add To Cart" TextColor="White" BackgroundColor="#FC622F" Clicked="Blackpenadd"/>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout BackgroundColor="Black" Orientation="Horizontal">
+                <Image x:Name="eraser1" HeightRequest="225" WidthRequest="225" />
+                <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" Margin="0,0,10,0" VerticalOptions="Center">
+                    <Label Text="Eraser" FontSize="Large" TextColor="White" HorizontalTextAlignment="Center"/>
+                    <Label Text="Cost: 10 Credits" TextColor="White" HorizontalTextAlignment="Center"/>
+                    <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                        <Stepper x:Name="erstepper" Minimum="1" Maximum="100" Increment="1" HorizontalOptions="FillAndExpand"></Stepper>
+                        <Label TextColor="White" HorizontalOptions="Center" FontSize="Medium"
+                                Text="{Binding Source={x:Reference erstepper},
+                                Path=Value,
+                                StringFormat='Quantity: {0}' }"/>
+                    </StackLayout>
+                    <Button Text="Add To Cart" TextColor="White" BackgroundColor="#FC622F" Clicked="Eraseradd"/>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout BackgroundColor="Black" Orientation="Horizontal">
+                <Image x:Name="notebook" HeightRequest="225" WidthRequest="225" />
+                <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" Margin="0,0,10,0" VerticalOptions="Center">
+                    <Label Text="Notebook" FontSize="Large" TextColor="White" HorizontalTextAlignment="Center"/>
+                    <Label Text="Cost: 100 Credits" TextColor="White" HorizontalTextAlignment="Center"/>
+                    <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                        <Stepper x:Name="nbstepper" Minimum="1" Maximum="100" Increment="1" HorizontalOptions="FillAndExpand"></Stepper>
+                        <Label TextColor="White" HorizontalOptions="Center" FontSize="Medium"
+                                Text="{Binding Source={x:Reference nbstepper},
+                                Path=Value,
+                                StringFormat='Quantity: {0}' }"/>
+                    </StackLayout>
+                    <Button Text="Add To Cart" TextColor="White" BackgroundColor="#FC622F" Clicked="Notebookadd"/>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout BackgroundColor="Black" Orientation="Horizontal">
+                <Image x:Name="pen2" HeightRequest="225" WidthRequest="225" />
+                <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" Margin="0,0,10,0" VerticalOptions="Center">
+                    <Label Text="Blue Pen" FontSize="Large" TextColor="White" HorizontalTextAlignment="Center"/>
+                    <Label Text="Cost: 10 Credits" TextColor="White" HorizontalTextAlignment="Center"/>
+                    <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                        <Stepper x:Name="blpstepper" Minimum="1" Maximum="100" Increment="1" HorizontalOptions="FillAndExpand"></Stepper>
+                        <Label TextColor="White" HorizontalOptions="Center" FontSize="Medium"
+                                Text="{Binding Source={x:Reference blpstepper},
+                                Path=Value,
+                                StringFormat='Quantity: {0}' }"/>
+                    </StackLayout>
+                    <Button Text="Add To Cart" TextColor="White" BackgroundColor="#FC622F" Clicked="Bluepenadd"/>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout BackgroundColor="Black" Orientation="Horizontal">
+                <Image x:Name="pencil" HeightRequest="225" WidthRequest="225" />
+                <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" Margin="0,0,10,0" VerticalOptions="Center">
+                    <Label Text="Pencil" FontSize="Large" TextColor="White" HorizontalTextAlignment="Center"/>
+                    <Label Text="Cost: 5 Credits" TextColor="White" HorizontalTextAlignment="Center"/>
+                    <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                        <Stepper x:Name="pcstepper" Minimum="1" Maximum="100" Increment="1" HorizontalOptions="FillAndExpand"></Stepper>
+                        <Label TextColor="White" HorizontalOptions="Center" FontSize="Medium"
+                                Text="{Binding Source={x:Reference pcstepper},
+                                Path=Value,
+                                StringFormat='Quantity: {0}' }"/>
+                    </StackLayout>
+                    <Button Text="Add To Cart" TextColor="White" BackgroundColor="#FC622F" Clicked="Penciladd"/>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout BackgroundColor="Black" Orientation="Horizontal">
+                <Image x:Name="sharpener" HeightRequest="225" WidthRequest="225" />
+                <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" Margin="0,0,10,0" VerticalOptions="Center">
+                    <Label Text="Sharpener" FontSize="Large" TextColor="White" HorizontalTextAlignment="Center"/>
+                    <Label Text="Cost: 30 Credits" TextColor="White" HorizontalTextAlignment="Center"/>
+                    <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                        <Stepper x:Name="spstepper" Minimum="1" Maximum="100" Increment="1" HorizontalOptions="FillAndExpand"></Stepper>
+                        <Label TextColor="White" HorizontalOptions="Center" FontSize="Medium"
+                                Text="{Binding Source={x:Reference spstepper},
+                                Path=Value,
+                                StringFormat='Quantity: {0}' }"/>
+                    </StackLayout>
+                    <Button Text="Add To Cart" TextColor="White" BackgroundColor="#FC622F" Clicked="Sharpeneradd"/>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout BackgroundColor="Black" Orientation="Horizontal">
+                <Image x:Name="stapler" HeightRequest="225" WidthRequest="225" />
+                <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" Margin="0,0,10,0" VerticalOptions="Center">
+                    <Label Text="stapler" FontSize="Large" TextColor="White" HorizontalTextAlignment="Center"/>
+                    <Label Text="Cost: 90 Credits" TextColor="White" HorizontalTextAlignment="Center"/>
+                    <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                        <Stepper x:Name="srstepper" Minimum="1" Maximum="100" Increment="1" HorizontalOptions="FillAndExpand"></Stepper>
+                        <Label TextColor="White" HorizontalOptions="Center" FontSize="Medium"
+                                Text="{Binding Source={x:Reference srstepper},
+                                Path=Value,
+                                StringFormat='Quantity: {0}' }"/>
+                    </StackLayout>
+                    <Button Text="Add To Cart" TextColor="White" BackgroundColor="#FC622F" Clicked="Stapleradd"/>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout BackgroundColor="Black" Orientation="Horizontal">
+                <Image x:Name="tape1" HeightRequest="225" WidthRequest="225" />
+                <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" Margin="0,0,10,0" VerticalOptions="Center">
+                    <Label Text="Tape" FontSize="Large" TextColor="White" HorizontalTextAlignment="Center"/>
+                    <Label Text="Cost: 50 Credits" TextColor="White" HorizontalTextAlignment="Center"/>
+                    <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                        <Stepper x:Name="tpstepper" Minimum="1" Maximum="100" Increment="1" HorizontalOptions="FillAndExpand"></Stepper>
+                        <Label TextColor="White" HorizontalOptions="Center" FontSize="Medium"
+                                Text="{Binding Source={x:Reference tpstepper},
+                                Path=Value,
+                                StringFormat='Quantity: {0}' }"/>
+                    </StackLayout>
+                    <Button Text="Add To Cart" TextColor="White" BackgroundColor="#FC622F" Clicked="Tapeadd"/>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout BackgroundColor="Black" Orientation="Horizontal">
+                <Image x:Name="scissors" HeightRequest="225" WidthRequest="225" />
+                <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" Margin="0,0,10,0" VerticalOptions="Center">
+                    <Label Text="Scissors" FontSize="Large" TextColor="White" HorizontalTextAlignment="Center"/>
+                    <Label Text="Cost: 40 Credits" TextColor="White" HorizontalTextAlignment="Center"/>
+                    <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                        <Stepper x:Name="ssstepper" Minimum="1" Maximum="100" Increment="1" HorizontalOptions="FillAndExpand"></Stepper>
+                        <Label TextColor="White" HorizontalOptions="Center" FontSize="Medium"
+                                Text="{Binding Source={x:Reference ssstepper},
+                                Path=Value,
+                                StringFormat='Quantity: {0}' }"/>
+                    </StackLayout>
+                    <Button Text="Add To Cart" TextColor="White" BackgroundColor="#FC622F" Clicked="Scissorsadd"/>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout BackgroundColor="Black" Orientation="Horizontal">
+                <Image x:Name="postits" HeightRequest="225" WidthRequest="225" />
+                <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" Margin="0,0,10,0" VerticalOptions="Center">
+                    <Label Text="Post-Its" FontSize="Large" TextColor="White" HorizontalTextAlignment="Center"/>
+                    <Label Text="Cost: 50 Credits" TextColor="White" HorizontalTextAlignment="Center"/>
+                    <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                        <Stepper x:Name="ptstepper" Minimum="1" Maximum="100" Increment="1" HorizontalOptions="FillAndExpand"></Stepper>
+                        <Label TextColor="White" HorizontalOptions="Center" FontSize="Medium"
+                                Text="{Binding Source={x:Reference ptstepper},
+                                Path=Value,
+                                StringFormat='Quantity: {0}' }"/>
+                    </StackLayout>
+                    <Button Text="Add To Cart" TextColor="White" BackgroundColor="#FC622F" Clicked="Postitsadd"/>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout BackgroundColor="Black" Orientation="Horizontal">
+                <Image x:Name="calculator" HeightRequest="225" WidthRequest="225" />
+                <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" Margin="0,0,10,0" VerticalOptions="Center">
+                    <Label Text="Calculator" FontSize="Large" TextColor="White" HorizontalTextAlignment="Center"/>
+                    <Label Text="Cost: 150 Credits" TextColor="White" HorizontalTextAlignment="Center"/>
+                    <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                        <Stepper x:Name="ccstepper" Minimum="1" Maximum="100" Increment="1" HorizontalOptions="FillAndExpand"></Stepper>
+                        <Label TextColor="White" HorizontalOptions="Center" FontSize="Medium"
+                                Text="{Binding Source={x:Reference ccstepper},
+                                Path=Value,
+                                StringFormat='Quantity: {0}' }"/>
+                    </StackLayout>
+                    <Button Text="Add To Cart" TextColor="White" BackgroundColor="#FC622F" Clicked="Calcadd"/>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout BackgroundColor="Black" Orientation="Horizontal">
+                <Image x:Name="paperclips" HeightRequest="225" WidthRequest="225" />
+                <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" Margin="0,0,10,0" VerticalOptions="Center">
+                    <Label Text="Paperclip" FontSize="Large" TextColor="White" HorizontalTextAlignment="Center"/>
+                    <Label Text="Cost: 5 Credits" TextColor="White" HorizontalTextAlignment="Center"/>
+                    <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                        <Stepper x:Name="ppstepper" Minimum="1" Maximum="100" Increment="1" HorizontalOptions="FillAndExpand"></Stepper>
+                        <Label TextColor="White" HorizontalOptions="Center" FontSize="Medium"
+                                Text="{Binding Source={x:Reference ppstepper},
+                                Path=Value,
+                                StringFormat='Quantity: {0}' }"/>
+                    </StackLayout>
+                    <Button Text="Add To Cart" TextColor="White" BackgroundColor="#FC622F" Clicked="Paperclipadd"/>
+                </StackLayout>
+            </StackLayout>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

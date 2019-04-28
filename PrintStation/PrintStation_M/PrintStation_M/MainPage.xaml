@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PrintStation_M"
+             Title="Home" x:Class="PrintStation_M.MainPage" BackgroundColor="AliceBlue">
+    
+    <StackLayout
+      Spacing="20"
+      Padding="20"
+      VerticalOptions="Center" >
+        <Image x:Name="PSLogo" />
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="0">
+            <Label FontSize="40" Text="Print" TextColor="Black" FontAttributes="Bold"/>
+            <Label FontSize="40" Text="Station" TextColor="#FC622F" FontAttributes="Bold"/>
+        </StackLayout>
+        <Entry x:Name="login1" Placeholder="Registration Number" TextColor="Black" PlaceholderColor="#FC622F" />
+        <Entry x:Name="password1" Placeholder="Password" IsPassword="True" TextColor="Black" PlaceholderColor="#FC622F"/>
+        <Button Text="Login" TextColor="White" BackgroundColor="#FC622F" Clicked="Button_Clicked" />
+    </StackLayout>
+
+</ContentPage>

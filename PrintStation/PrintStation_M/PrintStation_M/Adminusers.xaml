@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PrintStation_M.Adminusers">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <Label Text="Hello, Jackie Smith" HorizontalTextAlignment="End" Margin="0,5,10,0"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="0">
+                <Label FontSize="40" Text="All" TextColor="Black" FontAttributes="Bold"/>
+                <Label FontSize="40" Text="Users" TextColor="#FC622F" FontAttributes="Bold"/>
+            </StackLayout>
+            <ScrollView>
+                <StackLayout Margin="0,10,0,0">
+                    <ListView x:Name="ProductListView" HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand" RowHeight="120" ItemSelected="ProductListView_ItemSelected">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="CenterAndExpand" Margin="0,10,0,20">
+
+                                        <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="CenterAndExpand">
+                                            <Label Text="{Binding Username}" FontSize="Medium" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center" />
+
+                                            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" >
+
+                                                <StackLayout HorizontalOptions="Center" Orientation="Horizontal" Spacing="0">
+                                                    <Label Text="PW: " FontAttributes="Bold"/>
+                                                    <Label Text="{Binding Password}" FontAttributes="Bold" />
+                                                </StackLayout>
+
+                                                <StackLayout HorizontalOptions="Center" Orientation="Horizontal" Spacing="0">
+                                                    <Label Text="Type: " FontAttributes="Bold"/>
+                                                    <Label Text="{Binding Usertype}" FontAttributes="Bold" />
+                                                </StackLayout>
+                                            </StackLayout>
+
+                                        </StackLayout>
+
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+        <StackLayout Grid.Row="1" Orientation="Horizontal">
+            <Button Text="Confirm Order(s)" TextColor="White" BackgroundColor="#FC622F" HorizontalOptions="FillAndExpand" />
+        </StackLayout>
+    </Grid>
+</ContentPage>
