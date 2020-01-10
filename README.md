@@ -17,8 +17,6 @@ Built in C# with ASP.NET framework for front-end & back-end operations alongside
 
 * [ASP.NET](https://dotnet.microsoft.com/apps/aspnet)
 
-**APIs Used**
-
 * iTextSharp - a .NET PDF library\
 Used for counting the number of pages in pdf documents uploaded; for calculating price.
 
