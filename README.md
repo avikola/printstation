@@ -17,6 +17,18 @@ Built in C# with ASP.NET framework for front-end & back-end operations alongside
 
 * [ASP.NET](https://dotnet.microsoft.com/apps/aspnet)
 
+**APIs Used**
+
+* iTextSharp - a .NET PDF library\
+Used for counting the number of pages in pdf documents uploaded; for calculating price.
+
+* Microsoft Word Object Library\
+Used for counting the number of pages in .doc, .docx, .rtf documents uploaded; for calculating price.
+
+* Simple Mail Transfer Protocol\
+To send e-mail notifications to users, informing them that their orders are ready for collection.
+
+
 ### Mobile Application - [go](https://github.com/avikola/printstation/tree/master/PrintStation/PrintStation_M) - [screenshots](#mobile)
 
 Mobile application built with Xamarin Framework that supports varying designs + portability across OSes.\
