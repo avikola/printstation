@@ -38,7 +38,6 @@ Mobile application built with Xamarin Framework that supports varying designs + 
 </div>
 
 <br/>
-<br/>
 
 ### Mobile
 <br/>
@@ -49,6 +48,7 @@ Mobile application built with Xamarin Framework that supports varying designs + 
   <img src="https://github.com/avikola/printstation/blob/master/screenshots/mobile/cart.png" alt="cart" width="250"/>
 </div>
 
+<br/>
 <br/>
 <br/>
 <br/>
