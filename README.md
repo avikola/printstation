@@ -31,10 +31,10 @@ Mobile application built with Xamarin Framework that supports varying designs + 
 <br/>
 
 <div align="center">
-<img src="https://github.com/avikola/printstation/blob/master/screenshots/web/home.jpg" alt="home" width="600"/>
-<img src="https://github.com/avikola/printstation/blob/master/screenshots/web/printscreen.jpg" alt="print screen" width="600"/>
-<img src="https://github.com/avikola/printstation/blob/master/screenshots/web/catalogue.jpg" alt="catalogue" width="600"/>
-<img src="https://github.com/avikola/printstation/blob/master/screenshots/web/cart.jpg" alt="shopping cart" width="600"/>
+<img src="https://github.com/avikola/printstation/blob/master/screenshots/web/home.jpg" alt="home" width="700"/>
+<img src="https://github.com/avikola/printstation/blob/master/screenshots/web/printscreen.jpg" alt="print screen" width="700"/>
+<img src="https://github.com/avikola/printstation/blob/master/screenshots/web/catalogue.jpg" alt="catalogue" width="700"/>
+<img src="https://github.com/avikola/printstation/blob/master/screenshots/web/cart.jpg" alt="shopping cart" width="700"/>
 </div>
 
 <br/>
